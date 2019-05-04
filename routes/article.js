@@ -19,6 +19,32 @@ router.get('/getArticle/:id', (request, response) => {
     })
 })
 
+router.post('/setArticle', (request, response) => {
+    // ArticleSchema.deleteMany({ id: { $in: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] } }, (err) => {
+    // var articles = { ...request.body };    
+    // articles.array.forEach(article => {
+    //     console.log(article.id);
+    // });
+    // ArticleSchema.save(articles);
+
+    // response.body.articles.map((article) => {
+    //     article.save((error) => {
+    //         if (error == null) console.log('Articulo Guardado');
+    //         else console.log(`ERROR ${error}`);
+    //     });
+    // })
+    // response.send("todo dd");
+    // });
+
+    // var article = new ArticleSchema({ ...request.body });
+
+    // article.save((error) => {
+    // if (error == null) console.log('Articulo Guardado');
+    // else console.log(`ERROR ${error}`);
+    // });
+
+});
+
 router.post('/newArticle', (request, response) => {
     var article = new ArticleSchema({ ...request.body });
 
@@ -33,9 +59,10 @@ router.post('/newArticle', (request, response) => {
 router.put('/updateArticle/:id', (request, response) => {
     ArticleSchema.findById(request.params.id, (error, article) => {
         if (error == null) {
-            article.title = request.body.title;
+            // article.title = request.body.title;
             article.description = request.body.description;
-            article.price = request.body.price;
+            // article.price = request.body.price;
+            // article.category = request.body.category;
             article.save((error) => {
                 if (error == null) {
                     console.log('Articulo Actualizado');

@@ -1,0 +1,4 @@
+Header set Access-Control-Allow-Origin "http://localhost:9000"
+RewriteEngine on
+RewriteCond $1 !^(index.php|assets|Scripts)
+RewriteRule ^(.*)$ index.php/$1 [L]

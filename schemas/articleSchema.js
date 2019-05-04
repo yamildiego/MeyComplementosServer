@@ -1,30 +1,32 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-const type = ['image', 'video'];
-
 var article = new Schema({
+    id: Number,
     title: String,
     description: String,
-    price: Number
-    // category: Number,
-    // images: [{
-    //     id: Number,
-    //     type: type,
-    //     path: String
-    // }],
-    // colors: [{
-    //     value: Number,
-    //     displayName: type
-    // }],
-    // brand: {
-    //     id: Number,
-    //     displayName: String
-    // },
-    // sizes: [{
-    //     value: Number,
-    //     displayName: type
-    // }],
+    price: Number,
+    category: Number,
+    images: [{
+        id: Number,
+        type: {
+            type: String,
+            enum: ['image', 'video']
+        },
+        path: String
+    }],
+    colors: [{
+        value: Number,
+        displayName: String
+    }],
+    brand: {
+        id: Number,
+        displayName: String
+    },
+    sizes: [{
+        value: Number,
+        displayName: String
+    }]
 })
 
 module.exports = mongoose.model('Article', article);

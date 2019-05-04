@@ -2,77 +2,106 @@
     "categories": [
         {
             "id": 1,
-            "name": "Mujer training",
+            "name": "Calzas",
             "subcategories": [
                 {
+                    "id": 2,
+                    "name": "Moda"
+                },
+                {
+                    "id": 3,
+                    "name": "Running"
+                },
+                {
                     "id": 4,
-                    "name": "Mujer training 4"
-                },
-                {
-                    "id": 5,
-                    "name": "Mujer training 5"
-                },
-                {
-                    "id": 6,
-                    "name": "Mujer training 6"
+                    "name": "Training"
                 }
             ]
         },
         {
-            "id": 2,
-            "name": "Lencería"
-        },
-        {
-            "id": 3,
-            "name": "Calzado",
+            "id": 5,
+            "name": "Camperas",
             "subcategories": [
                 {
+                    "id": 6,
+                    "name": "Moda"
+                },
+                {
                     "id": 7,
-                    "name": "Calzado 7"
+                    "name": "Running"
                 },
                 {
                     "id": 8,
-                    "name": "Calzado 8"
+                    "name": "Training"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Remeras",
+            "subcategories": [
+                {
+                    "id": 10,
+                    "name": "Moda"
                 },
                 {
-                    "id": 9,
-                    "name": "Calzado 9"
+                    "id": 11,
+                    "name": "Running"
+                },
+                {
+                    "id": 12,
+                    "name": "Tenis"
+                },
+                {
+                    "id": 13,
+                    "name": "Training"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Zapatillas",
+            "subcategories": [
+                {
+                    "id": 15,
+                    "name": "Moda"
+                },
+                {
+                    "id": 16,
+                    "name": "Running"
+                },
+                {
+                    "id": 17,
+                    "name": "Tenis"
+                },
+                {
+                    "id": 18,
+                    "name": "Training"
                 }
             ]
         }
     ],
     "articles": [
         {
-            "id": 1,
-            "title": "Shorts para ciclismo",
-            "price": 1699,
-            "category": 2,
+            "id": 8,
+            "title": "Campera Parka",
+            "price": 4299,
+            "category": 7,
             "images": [
                 {
                     "id": 1,
                     "type": "image",
-                    "path": "src/images/articles/95384.png"
+                    "path": "src/images/articles/DE8764.png"
                 },
                 {
-                    "id": 8,
+                    "id": 2,
                     "type": "image",
-                    "path": "src/images/articles/95386.jpg"
-                },
-                {
-                    "id": 13,
-                    "type": "video",
-                    "path": "src/images/articles/95388.mp4"
-                }
-            ],
-            "colors": [
-                {
-                    "displayName": "Rojo",
-                    "value": 0
+                    "path": "src/images/articles/DE8754.png"
                 }
             ],
             "brand": {
-                "displayName": "ADIDAS",
-                "id": 1
+                "id": 7,
+                "displayName": "CataMa"
             },
             "sizes": [
                 {
@@ -85,234 +114,28 @@
                 },
                 {
                     "displayName": "M",
-                    "value": 2
+                    "value": 3
                 },
                 {
                     "displayName": "L",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Zapatillas nike metcon 3",
-            "price": 5390,
-            "category": 4,
-            "images": [
-                {
-                    "id": 13,
-                    "type": "image",
-                    "path": "src/images/articles/N99032.png"
-                },
-                {
-                    "id": 14,
-                    "type": "image",
-                    "path": "src/images/articles/N32534.png"
-                },
-                {
-                    "id": 15,
-                    "type": "image",
-                    "path": "src/images/articles/N38834.png"
-                },
-                {
-                    "id": 16,
-                    "type": "image",
-                    "path": "src/images/articles/N38764.png"
-                }
-            ],
-            "brand": {
-                "displayName": "NIKE",
-                "id": 2
-            },
-            "sizes": [
-                {
-                    "displayName": "38",
-                    "value": 0
-                },
-                {
-                    "displayName": "39",
-                    "value": 1
-                },
-                {
-                    "displayName": "40",
-                    "value": 2
-                },
-                {
-                    "displayName": "41",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "title": "Conjunto de puntilla y tul",
-            "description": "Conjunto de puntilla y tul, Corpiño tasa soft con base y colaless.",
-            "price": 959.99,
-            "category": 5,
-            "images": [
-                {
-                    "id": 13,
-                    "type": "image",
-                    "path": "src/images/articles/MK3124.jpg"
-                },
-                {
-                    "id": 14,
-                    "type": "image",
-                    "path": "src/images/articles/MK3431.jpg"
-                },
-                {
-                    "id": 15,
-                    "type": "image",
-                    "path": "src/images/articles/MK3464.jpg"
-                }
-            ],
-            "brand": {
-                "displayName": "MARCELA KOURY",
-                "id": 3
-            },
-            "sizes": [
-                {
-                    "displayName": "85",
-                    "value": 0
-                },
-                {
-                    "displayName": "90",
-                    "value": 1
-                },
-                {
-                    "displayName": "95",
-                    "value": 2
-                },
-                {
-                    "displayName": "100",
-                    "value": 3
-                }
-            ],
-            "colors": [
-                {
-                    "displayName": "Blanco",
-                    "value": 0
-                },
-                {
-                    "displayName": "Negro",
-                    "value": 1
-                },
-                {
-                    "displayName": "Azul Bionic",
-                    "value": 2
-                },
-                {
-                    "displayName": "Borde",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "title": "Calza de microfibra",
-            "description": "Calza de microfibra con elastano.",
-            "price": 1399.99,
-            "category": 7,
-            "images": [
-                {
-                    "id": 13,
-                    "type": "image",
-                    "path": "src/images/articles/MK4354.png"
-                },
-                {
-                    "id": 14,
-                    "type": "image",
-                    "path": "src/images/articles/MK4355.png"
-                }
-            ],
-            "brand": {
-                "displayName": "MARCELA KOURY",
-                "id": 3
-            },
-            "sizes": [
-                {
-                    "displayName": "S",
-                    "value": 0
-                },
-                {
-                    "displayName": "M",
-                    "value": 1
-                },
-                {
-                    "displayName": "L",
-                    "value": 2
-                },
-                {
-                    "displayName": "XL",
-                    "value": 3
-                }
-            ],
-            "colors": [
-                {
-                    "displayName": "Negro",
-                    "value": 0
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "title": "Conjunto de microfibra",
-            "description": "Conjunto de microfibra Jacquard, Corpiño con base tasa soft y coulotteless. Free spirit",
-            "price": 1399.99,
-            "category": 5,
-            "images": [
-                {
-                    "id": 13,
-                    "type": "image",
-                    "path": "src/images/articles/MK43690.png"
-                },
-                {
-                    "id": 14,
-                    "type": "image",
-                    "path": "src/images/articles/MK43692.png"
-                }
-            ],
-            "brand": {
-                "displayName": "MARCELA KOURY",
-                "id": 3
-            },
-            "sizes": [
-                {
-                    "displayName": "85",
-                    "value": 0
-                },
-                {
-                    "displayName": "90",
-                    "value": 1
-                },
-                {
-                    "displayName": "95",
-                    "value": 2
-                },
-                {
-                    "displayName": "100",
-                    "value": 3
-                },
-                {
-                    "displayName": "105",
                     "value": 4
                 },
                 {
-                    "displayName": "110",
+                    "displayName": "XL",
                     "value": 5
                 }
             ],
             "colors": [
                 {
-                    "displayName": "Blanco",
+                    "displayName": "Verde",
                     "value": 0
                 },
                 {
-                    "displayName": "Negro",
+                    "displayName": "Azul marino",
                     "value": 1
                 },
                 {
-                    "displayName": "Damasco",
+                    "displayName": "Negro",
                     "value": 2
                 }
             ]

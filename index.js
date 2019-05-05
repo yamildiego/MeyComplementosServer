@@ -2,6 +2,7 @@ let express = require('express');
 let bodyParser = require("body-parser");
 let articleRoute = require('./routes/article');
 let categoryRoute = require('./routes/category');
+let saleRoute = require('./routes/sale');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let app = express();
@@ -22,6 +23,7 @@ mongoose.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true }, 
 
 app.use(articleRoute);
 app.use(categoryRoute);
+app.use(saleRoute);
 
 app.use(express.static('public'));
 
